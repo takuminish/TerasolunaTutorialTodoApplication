@@ -53,6 +53,8 @@ public class TodoServiceImpl implements TodoService {
             messages.add(ResultMessage
                     .fromText("[E001] The count of un-finished Todo must not be over "
                             + MAX_UNFINISHED_COUNT + "."));
+            
+            throw new BusinessException(messages);
 		}
 		
 		
