@@ -15,6 +15,10 @@ public class TodoForm implements Serializable {
 		
 	};
 	
+	public static interface TodoDelete {
+		
+	};
+	
 	private static final long serialVersionUID = 1L;
 	
 	@NotNull(groups = {TodoFinish.class})
